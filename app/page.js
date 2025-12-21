@@ -54,11 +54,11 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="introduction" className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto  px-4 py-16 sm:px-6 lg:px-8">
         {/* Introduction Section */}
-        <section  className="mb-16">
+        <section  id="introduction" className="mb-16 pt-10">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">What is Tailwind CSS?</h2>
-          <div className="bg-white rounded-lg shadow-md p-7 m-5 ml-20 mr-60">
+          <div className="bg-white rounded-lg shadow-md p-7 m-5  ml-20 mr-60">
             <p className="text-2xl text-gray-700 mb-5">
               Tailwind CSS is a utility-first CSS framework designed to help developers build modern and responsive user interfaces directly in their HTML or JSX files. Instead of writing custom CSS rules, developers apply pre-defined utility classes to elements, allowing faster development and more consistent designs.
             </p>
@@ -93,7 +93,7 @@ export default function Home() {
         {/* Tutorial Section */}
         <section id="tutorial" className="mt-30 mb-30 pt-15">
           <section id="setup" className="mb-30">
-        <h2 className="text-5xl font-bold text-gray-900 mb-10">Setup Tutorial</h2>
+        <h2 className="text-5xl font-bold text-gray-900 mb-10">Setting up Tailwind CSS</h2>
           <div className="h-[calc(100vh-200px)] overflow-y-scroll scroll-smooth snap-y snap-mandatory bg-white rounded-lg shadow-md  ">
             <div className="h-full snap-start bg-blue-508">SECTION 1</div>
             <div className="h-full snap-start bg-pink-500">SECTION 2</div>
@@ -103,7 +103,17 @@ export default function Home() {
         </section>
         
         <section id="basics" className="mb-30 pt-15">
-        <h2 className="text-5xl font-bold text-gray-900 mb-10">Basic Tutorial</h2>
+        <h2 className="text-5xl font-bold text-gray-900 mb-10">Tailwind Utility Cases</h2>
+          <div id="design" className="h-[calc(100vh-200px)] overflow-y-scroll scroll-smooth snap-y snap-mandatory bg-white rounded-lg shadow-md  ">
+            <div className="h-full snap-start bg-blue-508">SECTION 1</div>
+            <div className="h-full snap-start bg-pink-500">SECTION 2</div>
+            <div className="h-full snap-start bg-green-500">SECTION 3</div>
+
+          </div>
+        </section>
+
+        <section id="github" className="mb-30 pt-15">
+        <h2 className="text-5xl font-bold text-gray-900 mb-10">Saving your Project</h2>
           <div id="design" className="h-[calc(100vh-200px)] overflow-y-scroll scroll-smooth snap-y snap-mandatory bg-white rounded-lg shadow-md  ">
             <div className="h-full snap-start bg-blue-508">SECTION 1</div>
             <div className="h-full snap-start bg-pink-500">SECTION 2</div>
@@ -114,73 +124,69 @@ export default function Home() {
         </section>
         
 
-        {/* Layouts Section */}
-        <section id="layouts" className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Layout Examples</h2>
-          
-          {/* Grid Layout */}
+        {/* FAQ's & Error Handling Section */}
+        <section id="FAQ's" className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">FAQ's / Error Handling</h2>
+        
           <div className="bg-white rounded-lg shadow-md p-8 mb-8">
-            <h3 className="text-xl font-bold mb-4">Grid Layout</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div className="bg-gradient-to-br from-blue-400 to-blue-600 text-white p-6 rounded-lg">
+            <h3 className="text-xl font-bold mb-4">Error Handling</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+              <div className="bg-gradient-to-r from-blue-500 to-blue-500 hover:from-blue-600 hover:to-blue-400 text-white font-bold py-4 px-4 rounded transition">
                 <h4 className="font-bold text-lg mb-2">Card 1</h4>
                 <p>This is a card in a responsive grid layout.</p>
               </div>
-              <div className="bg-gradient-to-br from-green-400 to-green-600 text-white p-6 rounded-lg">
+              <div className="bg-gradient-to-br from-green-500 to-green-500 hover:from-green-600 hover:to-green-400 text-white font-bold py-4 px-4 rounded transition">
                 <h4 className="font-bold text-lg mb-2">Card 2</h4>
                 <p>Grid automatically adjusts to screen size.</p>
               </div>
-              <div className="bg-gradient-to-br from-purple-400 to-purple-600 text-white p-6 rounded-lg">
+              <div className="bg-gradient-to-br from-purple-400 to-purple-600 hover:from-purple-500 hover:to-purple-700 text-white font-bold py-4 px-4 rounded transition">
+                <h4 className="font-bold text-lg mb-2">Card 3</h4>
+                <p>Three columns on large screens, stacked on mobile.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="bg-white rounded-lg shadow-md p-8 mb-8">
+            <h3 className="text-xl font-bold mb-4">Error handling</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="bg-gradient-to-r from-blue-500 to-blue-500 hover:from-blue-600 hover:to-blue-400 text-white font-bold py-4 px-4 rounded transition">
+                <h4 className="font-bold text-lg mb-2">Card 1</h4>
+                <p>This is a card in a responsive grid layout.</p>
+              </div>
+              <div className="bg-gradient-to-br from-green-500 to-green-500 hover:from-green-600 hover:to-green-400 text-white font-bold py-4 px-4 rounded transition">
+                <h4 className="font-bold text-lg mb-2">Card 2</h4>
+                <p>Grid automatically adjusts to screen size.</p>
+              </div>
+              <div className="bg-gradient-to-br from-purple-400 to-purple-600 hover:from-purple-500 hover:to-purple-700 text-white font-bold py-4 px-4 rounded transition">
                 <h4 className="font-bold text-lg mb-2">Card 3</h4>
                 <p>Three columns on large screens, stacked on mobile.</p>
               </div>
             </div>
           </div>
 
-          {/* Flex Layout */}
-          <div className="bg-white rounded-lg shadow-md p-8">
-            <h3 className="text-xl font-bold mb-4">Flex Layout</h3>
-            <div className="flex flex-wrap gap-4 justify-center">
-              <div className="bg-red-500 text-white p-4 rounded-lg flex-shrink-0">Item 1</div>
-              <div className="bg-orange-500 text-white p-4 rounded-lg flex-shrink-0">Item 2</div>
-              <div className="bg-yellow-500 text-white p-4 rounded-lg flex-shrink-0">Item 3</div>
-              <div className="bg-teal-500 text-white p-4 rounded-lg flex-shrink-0">Item 4</div>
-            </div>
+        </section>
+
+        <section id="deploy" className=" m-16 pt-50 pb-50 text-xl text-gray-700">
+          <h2 className="text-5xl text-center text-gray-900 mb-16">Want to deploy your project to <b>Vercel</b>?</h2>
+          <div className="bg-white rounded-lg shadow-md p-7 m-5">
+            <p className="text-2xl text-gray-700 mb-5">
+              Deploying your Tailwind CSS project to Vercel is straightforward. Follow these steps to get your project live:
+            </p>
+            <ul className="list-disc list-inside mt-4 text-gray-700 text-2xl mb-10">
+              <li className="mb-2">Visit <a href="https://vercel.com" className="text-blue-500 hover:underline">https://vercel.com</a> and create your Vercel Account or sign in with your Github Account</li>
+              <li className="mb-2">GitHub Account (to link your repository)</li>
+              <li className="mb-2">Your Tailwind CSS Project pushed to a GitHub Repository</li>
+              <li className="mb-2">And import your Project</li>
+            </ul>
+            <p className="text-center text-3xl font-bold">
+              And you're good to go!
+            </p>
+            <p className="text-xl text-gray-700 mt-5 mb-5">
+              Note: Connecting your GitHub account to Vercel allows automatic updates whenever you push changes to your repository.
+            </p>
           </div>
         </section>
 
-        {/* Image Section */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Images</h2>
-          <div className="bg-white rounded-lg shadow-md p-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div>
-                <img 
-                  src="https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Image+1" 
-                  alt="Placeholder" 
-                  className="w-full rounded-lg shadow-md"
-                />
-                <p className="mt-2 text-center font-medium">Rounded Image</p>
-              </div>
-              <div>
-                <img 
-                  src="https://via.placeholder.com/400x300/10B981/FFFFFF?text=Image+2" 
-                  alt="Placeholder" 
-                  className="w-full rounded-full shadow-md"
-                />
-                <p className="mt-2 text-center font-medium">Circular Image</p>
-              </div>
-              <div>
-                <img 
-                  src="https://via.placeholder.com/400x300/8B5CF6/FFFFFF?text=Image+3" 
-                  alt="Placeholder" 
-                  className="w-full shadow-2xl"
-                  />
-                <p className="mt-2 text-center font-medium">Shadow Image</p>
-              </div>
-            </div>
-          </div>
-        </section>
         </div>
 
       {/* Footer */}
@@ -193,6 +199,50 @@ export default function Home() {
     </div>
   );
 }
+
+{/* Image Section
+<section className="mb-16">
+  <h2 className="text-3xl font-bold text-gray-900 mb-6">Images</h2>
+  <div className="bg-white rounded-lg shadow-md p-8">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <img 
+          src="https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Image+1" 
+          alt="Placeholder" 
+          className="w-full rounded-lg shadow-md"
+        />
+        <p className="mt-2 text-center font-medium">Rounded Image</p>
+      </div>
+      <div>
+        <img 
+          src="https://via.placeholder.com/400x300/10B981/FFFFFF?text=Image+2" 
+          alt="Placeholder" 
+          className="w-full rounded-full shadow-md"
+        />
+        <p className="mt-2 text-center font-medium">Circular Image</p>
+      </div>
+      <div>
+        <img 
+          src="https://via.placeholder.com/400x300/8B5CF6/FFFFFF?text=Image+3" 
+          alt="Placeholder" 
+          className="w-full shadow-2xl"
+          />
+        <p className="mt-2 text-center font-medium">Shadow Image</p>
+      </div>
+    </div>
+  </div>
+</section> */}
+
+          {/* Flex Layout
+          <div className="bg-white rounded-lg shadow-md p-8">
+          <h3 className="text-xl font-bold mb-4">Flex Layout</h3>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <div className="bg-red-500 text-white p-4 rounded-lg flex-shrink-0">Item 1</div>
+              <div className="bg-orange-500 text-white p-4 rounded-lg flex-shrink-0">Item 2</div>
+              <div className="bg-yellow-500 text-white p-4 rounded-lg flex-shrink-0">Item 3</div>
+              <div className="bg-teal-500 text-white p-4 rounded-lg flex-shrink-0">Item 4</div>
+            </div>
+          </div> */}
 
         {/* Tutorial Section
         <section id="tutorial" className="mb-16">
