@@ -8,12 +8,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <h1 className="text-2xl font-bold text-indigo-600">TailwindDemo</h1>
+              <h1 className="text-2xl font-bold text-indigo-600">Tailwind CSS</h1>
             </div>
             <div className="hidden md:flex space-x-8">
-              <a href="#buttons" className="text-gray-700 hover:text-indigo-600 transition">Buttons</a>
-              <a href="#colors" className="text-gray-700 hover:text-indigo-600 transition">Colors</a>
-              <a href="#layouts" className="text-gray-700 hover:text-indigo-600 transition">Layouts</a>
+              <a href="#introduction" className="text-gray-700 hover:text-indigo-600 transition">Introduction</a>
+              <a href="#prerequisite" className="text-gray-700 hover:text-indigo-600 transition">Prerequisite</a>
+              <a href="#tutorial" className="text-gray-700 hover:text-indigo-600 transition">Tutorial</a>
               <a href="#text" className="text-gray-700 hover:text-indigo-600 transition">Typography</a>
             </div>
             <button className="md:hidden">
@@ -26,91 +26,93 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+      <div className="py-50 px-4 sm:px-6 lg:px-6 pb-100 bg-gradient-to-br from-blue-50 to-indigo-100 shadow-md ">
         <div className="text-center">
-          <h1 className="text-5xl font-extrabold text-gray-900 mb-4">
-            Tailwind CSS Components
+          <h1 className="text-7xl font-extrabold text-gray-900 mb-10">
+            Welcome to Tailwind CSS
           </h1>
-          <p className="text-xl text-gray-600 mb-8">
-            A showcase of beautiful, responsive components built with Tailwind CSS
+          <p className="text-3xl text-gray-600 mb-20">
+            This will show you how to use Tailwind CSS on your Projects
           </p>
-        </div>
-
+        
         {/* Buttons Section */}
+
         <section id="buttons" className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Buttons</h2>
-          <div className="bg-white rounded-lg shadow-md p-8">
-            <div className="flex flex-wrap gap-4">
-              <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition">
-                Primary Button
-              </button>
-              <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition">
-                Success Button
-              </button>
-              <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded transition">
-                Danger Button
-              </button>
-              <button className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded transition">
-                Secondary Button
-              </button>
-              <button className="border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white font-bold py-2 px-4 rounded transition">
-                Outline Button
-              </button>
-              <button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-2 px-4 rounded transition">
-                Gradient Button
-              </button>
+          <h2 className="text-4xl font-bold text-gray-900">Ready?</h2>
+          <div className=" p-5 flex flex-col items-center">
+            <div  className="pr-5 flex flex-wrap gap-5">
+              <a href="#introduction" className="text-xl border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white font-bold py-2 px-4 rounded transition">
+                Learn More
+              </a>
+              <a href="#tutorial" className="text-3xl bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition">
+                Get Started
+              </a>
+
             </div>
           </div>
         </section>
+        </div>
+      </div>
 
-        {/* Colors Section */}
-        <section id="colors" className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Color Palette</h2>
-          <div className="bg-white rounded-lg shadow-md p-8">
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-              <div className="text-center">
-                <div className="w-full h-24 bg-red-500 rounded-lg mb-2"></div>
-                <p className="text-sm font-medium">Red</p>
-              </div>
-              <div className="text-center">
-                <div className="w-full h-24 bg-blue-500 rounded-lg mb-2"></div>
-                <p className="text-sm font-medium">Blue</p>
-              </div>
-              <div className="text-center">
-                <div className="w-full h-24 bg-green-500 rounded-lg mb-2"></div>
-                <p className="text-sm font-medium">Green</p>
-              </div>
-              <div className="text-center">
-                <div className="w-full h-24 bg-yellow-500 rounded-lg mb-2"></div>
-                <p className="text-sm font-medium">Yellow</p>
-              </div>
-              <div className="text-center">
-                <div className="w-full h-24 bg-purple-500 rounded-lg mb-2"></div>
-                <p className="text-sm font-medium">Purple</p>
-              </div>
-              <div className="text-center">
-                <div className="w-full h-24 bg-pink-500 rounded-lg mb-2"></div>
-                <p className="text-sm font-medium">Pink</p>
-              </div>
-            </div>
+      <div id="introduction" className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+        {/* Introduction Section */}
+        <section  className="mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">What is Tailwind CSS?</h2>
+          <div className="bg-white rounded-lg shadow-md p-7 m-5 ml-20 mr-60">
+            <p className="text-2xl text-gray-700 mb-5">
+              Tailwind CSS is a utility-first CSS framework designed to help developers build modern and responsive user interfaces directly in their HTML or JSX files. Instead of writing custom CSS rules, developers apply pre-defined utility classes to elements, allowing faster development and more consistent designs.
+            </p>
+            <p className="text-xl font-bold text-gray-700">
+              Note: Tailwind’s official documentation presents multiple installation methods, the core concept of using utility classes remains the same across all setups.
+            </p>
           </div>
         </section>
 
-        {/* Typography Section */}
-        <section id="text" className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Typography</h2>
-          <div className="bg-white rounded-lg shadow-md p-8 space-y-4">
-            <h1 className="text-5xl font-bold text-gray-900">Heading 1 - Extra Large</h1>
-            <h2 className="text-4xl font-bold text-gray-900">Heading 2 - Large</h2>
-            <h3 className="text-3xl font-bold text-gray-900">Heading 3 - Medium</h3>
-            <p className="text-xl text-gray-700">This is a large paragraph with text-xl class.</p>
-            <p className="text-base text-gray-600">This is a regular paragraph with text-base class.</p>
-            <p className="text-sm text-gray-500">This is small text with text-sm class.</p>
-            <p className="font-bold text-gray-900">This is bold text.</p>
-            <p className="italic text-gray-700">This is italic text.</p>
-            <p className="underline text-blue-600">This is underlined text.</p>
+        {/* Prerequisite Section */}
+          <section id="prerequisite" className="mb-16">
+          <h2 className="text-4xl text-right font-bold text-gray-900 mb-6">Prerequisites:</h2>
+          <div className="text-2xl text-gray-700 mb-5 bg-white rounded-lg shadow-md p-7 m-5 mr-20 ml-60">
+            <p className="text-2xl text-gray-700 mb-5">
+              You need the following tools installed on your machine to set up Tailwind CSS:
+            </p>
+              <ul className="list-disc list-inside mt-4">
+                <li className="mb-2"><a href="https://nodejs.org/en/download" className="text-blue-500 hover:underline">Node.js</a></li>
+                <li className="mb-2"><a href="https://code.visualstudio.com/download" className="text-blue-500 hover:underline">Visual Studio Code</a> (or similar code editors compatible)</li>
+              </ul>
+              <p className="text-2xl text-gray-700 mb-5">
+              <br></br>Additionally, if you want to save your project to a remote repository, you should have:
+              </p>
+              <ul className="list-disc list-inside mt-4">
+                <li className="mb-2"><a href="https://git-scm.com/install/" className="text-blue-500 hover:underline">Git</a></li>
+                <li className="mb-2"><a href="https://desktop.github.com/download/" className="text-blue-500 hover:underline">Github Desktop</a> (For convenient push)</li>
+              </ul>
           </div>
         </section>
+
+
+        {/* Tutorial Section */}
+        <section id="tutorial" className="mt-30 mb-30 pt-15">
+          <section id="setup" className="mb-30">
+        <h2 className="text-5xl font-bold text-gray-900 mb-10">Setup Tutorial</h2>
+          <div className="h-[calc(100vh-200px)] overflow-y-scroll scroll-smooth snap-y snap-mandatory bg-white rounded-lg shadow-md  ">
+            <div className="h-full snap-start bg-blue-508">SECTION 1</div>
+            <div className="h-full snap-start bg-pink-500">SECTION 2</div>
+            <div className="h-full snap-start bg-green-500">SECTION 3</div>
+
+          </div>
+        </section>
+        
+        <section id="basics" className="mb-30 pt-15">
+        <h2 className="text-5xl font-bold text-gray-900 mb-10">Basic Tutorial</h2>
+          <div id="design" className="h-[calc(100vh-200px)] overflow-y-scroll scroll-smooth snap-y snap-mandatory bg-white rounded-lg shadow-md  ">
+            <div className="h-full snap-start bg-blue-508">SECTION 1</div>
+            <div className="h-full snap-start bg-pink-500">SECTION 2</div>
+            <div className="h-full snap-start bg-green-500">SECTION 3</div>
+
+          </div>
+        </section>
+        </section>
+        
 
         {/* Layouts Section */}
         <section id="layouts" className="mb-16">
@@ -173,21 +175,70 @@ export default function Home() {
                   src="https://via.placeholder.com/400x300/8B5CF6/FFFFFF?text=Image+3" 
                   alt="Placeholder" 
                   className="w-full shadow-2xl"
-                />
+                  />
                 <p className="mt-2 text-center font-medium">Shadow Image</p>
               </div>
             </div>
           </div>
         </section>
-      </div>
+        </div>
 
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-8">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <p className="text-lg">Built with Next.js and Tailwind CSS</p>
-          <p className="text-sm text-gray-400 mt-2">A beginner-friendly tutorial project</p>
+          <p className="text-sm text-gray-400 mt-2">A beginner-friendly tutorial site</p>
         </div>
       </footer>
     </div>
   );
 }
+
+        {/* Tutorial Section
+        <section id="tutorial" className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Color Palette</h2>
+          <div className="bg-white rounded-lg shadow-md p-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+              <div className="text-center">
+                <div className="w-full h-24 bg-red-500 rounded-lg mb-2"></div>
+                <p className="text-sm font-medium">Red</p>
+              </div>
+              <div className="text-center">
+                <div className="w-full h-24 bg-blue-500 rounded-lg mb-2"></div>
+                <p className="text-sm font-medium">Blue</p>
+              </div>
+              <div className="text-center">
+                <div className="w-full h-24 bg-green-500 rounded-lg mb-2"></div>
+                <p className="text-sm font-medium">Green</p>
+              </div>
+              <div className="text-center">
+                <div className="w-full h-24 bg-yellow-500 rounded-lg mb-2"></div>
+                <p className="text-sm font-medium">Yellow</p>
+              </div>
+              <div className="text-center">
+                <div className="w-full h-24 bg-purple-500 rounded-lg mb-2"></div>
+                <p className="text-sm font-medium">Purple</p>
+              </div>
+              <div className="text-center">
+                <div className="w-full h-24 bg-pink-500 rounded-lg mb-2"></div>
+                <p className="text-sm font-medium">Pink</p>
+              </div>
+            </div>
+          </div>
+        </section>*/}
+
+         {/* Typography Section
+        <section id="text" className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Typography</h2>
+          <div className="bg-white rounded-lg shadow-md p-8 space-y-4">
+            <h1 className="text-5xl font-bold text-gray-900">Heading 1 - Extra Large</h1>
+            <h2 className="text-4xl font-bold text-gray-900">Heading 2 - Large</h2>
+            <h3 className="text-3xl font-bold text-gray-900">Heading 3 - Medium</h3>
+            <p className="text-xl text-gray-700">This is a large paragraph with text-xl class.</p>
+            <p className="text-base text-gray-600">This is a regular paragraph with text-base class.</p>
+            <p className="text-sm text-gray-500">This is small text with text-sm class.</p>
+            <p className="font-bold text-gray-900">This is bold text.</p>
+            <p className="italic text-gray-700">This is italic text.</p>
+            <p className="underline text-blue-600">This is underlined text.</p>
+          </div>
+        </section> */}
