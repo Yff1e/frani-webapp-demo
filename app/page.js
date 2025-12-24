@@ -119,7 +119,7 @@ export default function Home() {
               className="w-200 mx-auto rounded-lg shadow-md"
             />
             </div>
-            <div className="h-full snap-start bg-green-500">
+            <div className="bg-gradient-to-br from-slate-700 to-sky-950 h-full snap-start">
               <p className="text-3xl text-gray-900 ml-30 mr-30 pt-35 pb-10">Type <b>npx create-next-app@latest .</b> prompt to start installing Tailwind CSS using Next.js features</p>
               <p className="text-3xl text-gray-900 ml-30 mr-30 pb-15">And for this walkthrough, we'll be using customized settings so we have more control on what we are using</p>
               <img 
