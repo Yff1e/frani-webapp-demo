@@ -95,19 +95,131 @@ export default function Home() {
           <section id="setup" className="mb-30">
         <h2 className="text-5xl font-bold text-gray-900 mb-10">Setting up Tailwind CSS</h2>
           <div className="h-[calc(100vh-200px)] overflow-y-scroll scroll-smooth snap-y snap-mandatory bg-white rounded-lg shadow-md  ">
-            <div className="h-full snap-start bg-blue-508">SECTION 1</div>
-            <div className="h-full snap-start bg-pink-500">SECTION 2</div>
-            <div className="h-full snap-start bg-green-500">SECTION 3</div>
+            <div className="h-full snap-start bg-blue-508">
+              <p className="text-3xl text-gray-900 mt-20 ml-30 mr-30 pt-20 mb-10">In your code editor. Open a new terminal found on the menu bar. Inside the terminal, it will show the current location of your project</p>
+              <img 
+                src="/images/1.png" 
+                alt="Terminal Screenshot 1" 
+                className="w-170 mx-auto rounded-lg shadow-md"
+              />
+            </div>
+            <div className="h-full snap-start bg-pink-500">
+              <p className="text-3xl text-gray-900 ml-30 mr-30 pb-10 pt-25">You can type the following prompts to check if all the necessary tools are installed and see their current version
+                <ul className="list-disc list-inside mt-2">
+                  <li className="mb-2">node -v</li>
+                  <li className="mb-2">npm -v</li>
+                  <li className="mb-2">git -v</li>
+                </ul>
+              </p>
+              <img 
+              src="/images/2.png" 
+              alt="Terminal Screenshot 2" 
+              className="w-200 mx-auto rounded-lg shadow-md"
+            />
+            </div>
+            <div className="h-full snap-start bg-green-500">
+              <p className="text-3xl text-gray-900 ml-30 mr-30 pt-35 pb-10">Type <b>npx create-next-app@latest .</b> prompt to start installing Tailwind CSS using Next.js features</p>
+              <p className="text-3xl text-gray-900 ml-30 mr-30 pb-15">And for this walkthrough, we'll be using customized settings so we have more control on what we are using</p>
+              <img 
+                src="/images/3.png" 
+                alt="Terminal Screenshot 3" 
+                className="w-250 mx-auto rounded-lg shadow-md"
+              />
+            </div>
 
+            <div className="h-full snap-start bg-blue-500 ">
+              <p className="text-3xl text-gray-900 ml-30 mr-30 pt-35 pb-5">Refer to the image below and confirm the following settings</p>
+              <p className="text-3xl text-gray-900 ml-30 mr-30 pb-10">You can use the arrow keys to navigate through the options as shown in the terminal</p>
+              <img 
+                src="/images/4.png" 
+                alt="Terminal Screenshot 4" 
+                className="w-250 mx-auto rounded-lg shadow-md"
+              />
+            </div>
+            <div className="h-full snap-start bg-yellow-500 ">
+              <p className="text-3xl text-gray-900 ml-30 mr-30 pt-35 pb-5">You will now see a all of the components being installed</p>
+              <p className="text-3xl text-gray-900 ml-30 mr-30 pb-10">Wait till you see the message "Success!"</p>
+              <img 
+                src="/images/5.png" 
+                alt="Terminal Screenshot 5" 
+                className="w-150 mx-auto rounded-lg shadow-md"
+              />
+            </div>
+            <div className="h-full snap-start bg-red-500">
+              <p className="text-3xl text-gray-900 ml-30 mr-30 pt-35 pb-15">You will also notice in the explorer that all tools are now readily available</p>
+              <img 
+                src="/images/6.png" 
+                alt="File Explorer Screenshot 6" 
+                className="w-85 mx-auto rounded-lg shadow-md"
+              />
+            </div>
+            <div className="h-full snap-start bg-red-500 ">
+              <p className="text-3xl text-gray-900 ml-30 mr-30 pt-35 pb-5">Type <b>npm run dev</b> to start a server and click the localhost link to visit your page</p>
+              <p className="text-3xl text-gray-900 ml-30 mr-30 pb-5">You can also try to access it with an another device as long as it is connected with the same network</p>
+                <p className="text-3xl text-center text-gray-900 ml-30 mr-30 pb-10"><b>http://your ip address:3000</b></p>
+              <img 
+                src="/images/7.png" 
+                alt="Terminal Screenshot 7" 
+                className="w-200 mx-auto rounded-lg shadow-md"
+              />
+            </div>
+            <div className="h-full snap-start bg-red-500 ">
+              <p className="text-3xl text-gray-900 ml-30 mr-30 pt-25 pb-5"><b>Congratulations! You are now ready to start creating content for your project</b></p>
+              <p className="text-3xl text-gray-900 ml-30 mr-30  pb-5">This only serves as a placeholder and test if the project is working correctly</p>
+              <img 
+                src="/images/starting.png" 
+                alt="Page Screenshot" 
+                className="w-180 mx-auto rounded-lg shadow-md"
+              />
+            </div>
+            <div className="h-full snap-start bg-red-500 mb-20">
+              <p className="text-3xl text-gray-900 ml-30 mr-30 pt-35 pb-15">You can replace the code inside <b>page.js</b> to remove the placeholder and start on making changes</p>
+              <img 
+                src="/images/page.png" 
+                alt="page Screenshot" 
+                className="w-150 mx-auto rounded-lg shadow-md"
+              />
+            </div>
+            
+
+          
           </div>
         </section>
         
         <section id="basics" className="mb-30 pt-15">
         <h2 className="text-5xl font-bold text-gray-900 mb-10">Tailwind Utility Cases</h2>
           <div id="design" className="h-[calc(100vh-200px)] overflow-y-scroll scroll-smooth snap-y snap-mandatory bg-white rounded-lg shadow-md  ">
-            <div className="h-full snap-start bg-blue-508">SECTION 1</div>
-            <div className="h-full snap-start bg-pink-500">SECTION 2</div>
-            <div className="h-full snap-start bg-green-500">SECTION 3</div>
+            <div className="h-full snap-start bg-blue-508">
+              <p className="text-3xl text-gray-900 ml-30 mr-30 pt-20 mb-10">In your code editor. Open a new terminal found on the menu bar. Inside the terminal, it will show the current location of your project</p>
+              <img 
+                src="/images/1.png" 
+                alt="Terminal Screenshot 1" 
+                className="w-170 mx-auto rounded-lg shadow-md"
+              />
+            </div>
+            <div className="h-full snap-start bg-pink-500">
+              <p className="text-3xl text-gray-900 ml-30 mr-30 pb-10 pt-25">You can type the following prompts to check if all the necessary tools are installed and see their current version
+                <ul className="list-disc list-inside mt-2">
+                  <li className="mb-2">node -v</li>
+                  <li className="mb-2">npm -v</li>
+                  <li className="mb-2">git -v</li>
+                </ul>
+              </p>
+              <img 
+              src="/images/2.png" 
+              alt="Terminal Screenshot 2" 
+              className="w-200 mx-auto rounded-lg shadow-md"
+            />
+            </div>
+            <div className="h-full snap-start bg-green-500 mb-20">
+              <p className="text-3xl text-gray-900 ml-30 mr-30 pt-40 pb-10">Type <b>npx create-next-app@latest .</b> prompt to start installing Tailwind CSS using Next.js features</p>
+              <p className="text-3xl text-gray-900 ml-30 mr-30 pb-15">And for this walkthrough, we'll be using customized settings so we have more control on what we are using</p>
+              <img 
+                src="/images/3.png" 
+                alt="Terminal Screenshot 3" 
+                className="w-250 mx-auto rounded-lg shadow-md"
+              />
+            </div>
 
           </div>
         </section>
@@ -115,9 +227,36 @@ export default function Home() {
         <section id="github" className="mb-30 pt-15">
         <h2 className="text-5xl font-bold text-gray-900 mb-10">Saving your Project</h2>
           <div id="design" className="h-[calc(100vh-200px)] overflow-y-scroll scroll-smooth snap-y snap-mandatory bg-white rounded-lg shadow-md  ">
-            <div className="h-full snap-start bg-blue-508">SECTION 1</div>
-            <div className="h-full snap-start bg-pink-500">SECTION 2</div>
-            <div className="h-full snap-start bg-green-500">SECTION 3</div>
+            <div className="h-full snap-start bg-blue-508">
+              <p className="text-3xl text-gray-900 m-20 pt-20 mb-10">In your code editor. Open a new terminal found on the menu bar. Inside the terminal, it will show the current location of your project</p>
+              <img 
+                src="/images/1.png" 
+                alt="Terminal Screenshot 1" 
+                className="w-170 mx-auto rounded-lg shadow-md"
+              />
+            </div>
+            <div className="h-full snap-start bg-pink-500">
+              <p className="text-3xl text-gray-900 m-20 pt-25">You can type the following prompts to check if all the necessary tools are installed and see their current version
+                <ul className="list-disc list-inside mt-2 ">
+                  <li className="mb-2">node -v</li>
+                  <li className="mb-2">npm -v</li>
+                  <li className="mb-2">git -v</li>
+                </ul>
+              </p>
+              <img 
+              src="/images/2.png" 
+              alt="Terminal Screenshot 2" 
+              className="w-200 mx-auto rounded-lg shadow-md"
+            />
+            </div>
+            <div className="h-full snap-start bg-green-500 mb-20">
+              <p className="text-3xl text-gray-900 m-20 pt-40 pb-5">Type <b>npx create-next-app@latest .</b> prompt to start installing Tailwind CSS using Next.js features</p>
+              <img 
+                src="/images/3.png" 
+                alt="Terminal Screenshot 3" 
+                className="w-250 mx-auto rounded-lg shadow-md"
+              />
+            </div>
 
           </div>
         </section>
@@ -210,7 +349,7 @@ export default function Home() {
           src="https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Image+1" 
           alt="Placeholder" 
           className="w-full rounded-lg shadow-md"
-        />
+        />  
         <p className="mt-2 text-center font-medium">Rounded Image</p>
       </div>
       <div>
