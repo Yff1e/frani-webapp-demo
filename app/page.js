@@ -16,11 +16,12 @@ export default function Home() {
               <a href="#top" className="text-gray-300 hover:text-indigo-600 transition">Back to Top</a>
               <a href="#introduction" className="text-gray-300 hover:text-indigo-600 transition">Introduction</a>
               <a href="#tutorial" className="text-gray-300 hover:text-indigo-600 transition">Tutorial</a>
+              <a href="#FAQ's" className="text-gray-300 hover:text-indigo-600 transition">FAQ's</a>
               <a href="#deploy" className="text-gray-300 hover:text-indigo-600 transition">Deploy</a>
-              <a href="#contact" className="text-gray-300 hover:text-indigo-600 transition">contact</a>
+              <a href="#footer" className="text-gray-300 hover:text-indigo-600 transition">Contact</a>
             </div>
             <button className="md:hidden">
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="h-6a w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
@@ -41,7 +42,7 @@ export default function Home() {
         {/* Buttons Section */}
 
         <section id="buttons" className="mb-16">
-          <h2 className="text-4xl font-bold text-gray-300">Ready?</h2>
+          <h2 className="text-4xl font-bold text-gray-300 ">Ready?</h2>
           <div className=" p-5 flex flex-col items-center">
             <div  className="pr-5 flex flex-wrap gap-5">
               <a href="#introduction" className="text-xl border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white font-bold py-2 px-4 rounded transition">
@@ -59,10 +60,10 @@ export default function Home() {
 
       <div className="max-w-7xl mx-auto  px-4 py-16 sm:px-6 lg:px-8">
         {/* Introduction Section */}
-        <section  id="introduction" className="mb-16 pt-10">
-          <h2 className="text-4xl font-bold text-slate-100 mb-6">What is Tailwind CSS?</h2>
+        <section  id="introduction" className="mb-5 pt-10">
+          <h2 className="text-4xl font-bold text-slate-100 mt-10 mb-6">What is Tailwind CSS?</h2>
           <div className="bg-white rounded-lg shadow-md p-7 m-5  ml-20 mr-60">
-            <p className="text-2xl text-gray-700 mb-5">
+            <p className="text-2xl text-gray-700 mb-5 ">
               Tailwind CSS is a utility-first CSS framework designed to help developers build modern and responsive user interfaces directly in their HTML or JSX files. Instead of writing custom CSS rules, developers apply pre-defined utility classes to elements, allowing faster development and more consistent designs.
             </p>
             <p className="text-xl font-bold text-gray-700">
@@ -96,10 +97,10 @@ export default function Home() {
         {/* Tutorial Section */}
         <section id="tutorial" className="mt-30 mb-30 pt-15">
           <section id="setup" className="mb-30">
-        <h2 className="text-5xl font-bold text-slate-100 mb-10">Setting up Tailwind CSS</h2>
+        <h2 className="text-5xl font-bold text-slate-100 mt-10 mb-10">Setting up Tailwind CSS</h2>
           <div className="h-[calc(100vh-200px)] overflow-y-scroll scroll-smooth snap-y snap-mandatory bg-slate-700 rounded-lg shadow-xl">
             <div className="h-full snap-start flex flex-col justify-center bg-slate-800 px-20 mt-30">
-              <p className="text-3xl text-slate-200 leading-relaxed mt-5 ml-30 mr-30 mb-5">In your code editor. Open a new terminal found on the menu bar. Inside the terminal, it will show the current location of your project</p>
+              <p className="text-3xl text-slate-200 leading-relaxed mt-5 ml-30 mr-30 mb-5 ">In your code editor. Open a new terminal found on the menu bar. Inside the terminal, it will show the current location of your project</p>
               <img 
                 src="/images/1.png" 
                 alt="Terminal Screenshot 1" 
@@ -358,51 +359,110 @@ export default function Home() {
         
 
         {/* FAQ's & Error Handling Section */}
-        <section id="FAQ's" className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">FAQ's / Error Handling</h2>
+        <section id="FAQ's" className="mb-16 pt-50 pb-50">
+          <h2 className="text-3xl font-bold text-slate-100 mb-20">FAQ's / Error Handling</h2>
         
-          <div className="bg-white rounded-lg shadow-md p-8 mb-8">
-            <h3 className="text-xl font-bold mb-4">Error Handling</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
-              <div className="bg-gradient-to-r from-blue-500 to-blue-500 hover:from-blue-600 hover:to-blue-400 text-white font-bold py-4 px-4 rounded transition">
-                <h4 className="font-bold text-lg mb-2">Card 1</h4>
-                <p>This is a card in a responsive grid layout.</p>
-              </div>
-              <div className="bg-gradient-to-br from-green-500 to-green-500 hover:from-green-600 hover:to-green-400 text-white font-bold py-4 px-4 rounded transition">
-                <h4 className="font-bold text-lg mb-2">Card 2</h4>
-                <p>Grid automatically adjusts to screen size.</p>
-              </div>
-              <div className="bg-gradient-to-br from-purple-400 to-purple-600 hover:from-purple-500 hover:to-purple-700 text-white font-bold py-4 px-4 rounded transition">
-                <h4 className="font-bold text-lg mb-2">Card 3</h4>
-                <p>Three columns on large screens, stacked on mobile.</p>
-              </div>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        {/* Card 1 */}
+        <div className="group relative">
+          {/* Main Card */}
+          <div className="h-[150px] bg-gradient-to-r from-blue-500 to-blue-500 
+            hover:from-blue-600 hover:to-blue-400
+            text-white font-bold rounded transition
+            flex flex-col justify-center px-5 mb-20 cursor-pointer
+          ">
+            <h4 className="text-3xl text-center mb-5">1</h4>
+            <p className="text-xl">Naming convention for the project</p>
           </div>
-          
-          <div className="bg-white rounded-lg shadow-md p-8 mb-8">
-            <h3 className="text-xl font-bold mb-4">Error handling</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div className="bg-gradient-to-r from-blue-500 to-blue-500 hover:from-blue-600 hover:to-blue-400 text-white font-bold py-4 px-4 rounded transition">
-                <h4 className="font-bold text-lg mb-2">Card 1</h4>
-                <p>This is a card in a responsive grid layout.</p>
-              </div>
-              <div className="bg-gradient-to-br from-green-500 to-green-500 hover:from-green-600 hover:to-green-400 text-white font-bold py-4 px-4 rounded transition">
-                <h4 className="font-bold text-lg mb-2">Card 2</h4>
-                <p>Grid automatically adjusts to screen size.</p>
-              </div>
-              <div className="bg-gradient-to-br from-purple-400 to-purple-600 hover:from-purple-500 hover:to-purple-700 text-white font-bold py-4 px-4 rounded transition">
-                <h4 className="font-bold text-lg mb-2">Card 3</h4>
-                <p>Three columns on large screens, stacked on mobile.</p>
-              </div>
-            </div>
+
+          {/* Expand Panel */}
+          <div className="
+            absolute left-0 top-full mt-4 w-full
+            bg-white text-slate-800 rounded-lg shadow-lg p-5
+            opacity-0 scale-95 pointer-events-none
+            transition-all duration-300
+            group-hover:opacity-100 group-hover:scale-200 group-hover:pointer-events-auto
+          ">
+            <img 
+              src="/images/name error.png" 
+              alt="name error 1"
+              className="w-full rounded-lg shadow-md"
+            />
+            <p className="text-xs mt-4">Make sure to use lowercase letters for naming conventions as it will cause an error when starting the setup </p>
           </div>
+        </div>
+
+        {/* Card 2 */}
+        <div className="group relative">
+          <div className="h-[150px] bg-gradient-to-br from-green-500 to-green-500
+            hover:from-green-600 hover:to-green-400
+            text-white font-bold rounded transition
+            flex flex-col justify-center px-5 cursor-pointer
+          ">
+            <h4 className="text-3xl mb-5 text-center">2</h4>
+            <p className="text-xl text-center">Accessing on another device</p>
+          </div>
+
+          <div className="
+            absolute left-0 top-full mt-4 w-full
+            bg-white text-slate-800 rounded-lg shadow-lg p-6
+            opacity-0 scale-95 pointer-events-none
+            transition-all duration-300
+            group-hover:opacity-100 group-hover:scale-150 group-hover:pointer-events-auto
+          ">
+            <img 
+              src="/images/link.png" 
+              alt="ip address error"
+              className="w-full rounded-lg shadow-md"
+            />
+            <p className="text-xs mt-4">
+              Your network address may be changed for security purposes
+            </p>
+            <p className="text-xs mt-2">
+              To access on another device, make sure to check the current IP address by looking at your network settings and see the IPv4 address
+             </p>
+          </div>
+        </div>
+
+        {/* Card 3 */}
+        <div className="group relative">
+          <div className="h-[150px] bg-gradient-to-br from-purple-400 to-purple-600
+            hover:from-purple-500 hover:to-purple-700
+            text-white font-bold rounded transition
+            flex flex-col justify-center px-5 cursor-pointer
+          ">
+            <h4 className="text-3xl text-center mb-4">3</h4>
+            <p className="text-xl text-center">Error warning</p>
+          </div>
+
+          <div className="
+            absolute left-0 top-full mt-4 w-full
+            bg-white text-slate-800 rounded-lg shadow-lg p-6
+            opacity-0 scale-95 pointer-events-none
+            transition-all duration-300
+            group-hover:opacity-100 group-hover:scale-150 group-hover:pointer-events-auto
+          ">
+            <img
+              src="/images/error warnings.png" 
+              alt="error warning"
+              className="w-40 rounded-lg shadow-md justify-center mx-auto"
+            />
+            <p className="text-xs mt-4">
+              When commiting errors in your code, The logo below will display a warning icon to notify you and show what lines are causing the error
+            </p>
+          </div>
+        </div>
+
+      </div>
+
 
         </section>
 
         <section id="deploy" className=" m-16 pt-50 pb-50 text-xl text-gray-700">
           <h2 className="text-5xl text-center text-slate-100 mb-16">Want to deploy your project to <b>Vercel</b>?</h2>
           <div className="bg-white rounded-lg shadow-md p-7 m-5">
-            <p className="text-2xl text-gray-700 mb-5">
+            <p className="text-2xl text-gray-700 mb-5  ">
               Deploying your Tailwind CSS project to Vercel is straightforward. Follow these steps to get your project live:
             </p>
             <ul className="list-disc list-inside mt-4 text-gray-700 text-2xl mb-10">
@@ -423,12 +483,55 @@ export default function Home() {
         </div>
 
       {/* Footer */}
-      <footer className="bg-gray-800 text-white py-8">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <p className="text-lg">Built with Next.js and Tailwind CSS</p>
-          <p className="text-sm text-gray-400 mt-2">A beginner-friendly tutorial site</p>
-        </div>
-      </footer>
+      <footer id="footer" className="bg-gray-800 text-white pt-10 py-12">
+  <div className="max-w-7xl mx-auto px-6">
+
+    {/* Top footer content */}
+    <div className="flex flex-col md:flex-row justify-between gap-10 mb-12">
+
+      {/* Left */}
+      <div>
+        <h3 className="text-lg font-bold mb-4">Resources</h3>
+        <ul className="space-y-2 text-gray-300">
+          <li><a href="#tutorial" className="hover:text-white">Tutorial</a></li>
+          <li><a href="#introduction" className="hover:text-white">Introduction</a></li>
+          <li><a href="#deploy" className="hover:text-white">Deploy</a></li>
+        </ul>
+      </div>
+
+      {/* Middle */}
+      <div>
+        <h3 className="text-lg font-bold mb-4">Community</h3>
+        <ul className="space-y-2 text-gray-300">
+          <li><a href="#" className="hover:text-white">GitHub</a></li>
+          <li><a href="#" className="hover:text-white">Discord</a></li>
+          <li><a href="#" className="hover:text-white">Discussions</a></li>
+        </ul>
+      </div>
+
+      {/* Right */}
+      <div>
+        <h3 className="text-lg font-bold mb-4">About</h3>
+        <ul className="space-y-2 text-gray-300">
+          <li><a href="#FAQ's" className="hover:text-white">FAQs</a></li>
+          <li><a href="#contact" className="hover:text-white">Contact</a></li>
+          <li><a href="#top" className="hover:text-white">Back to Top</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    {/* Bottom footer text */}
+    <div className="border-t border-gray-700 pt-6 text-center">
+      <p className="text-lg">Built with Next.js and Tailwind CSS</p>
+      <p className="text-sm text-gray-400 mt-2">
+        A beginner-friendly tutorial site
+      </p>
+    </div>
+
+  </div>
+</footer>
+
     </div>
   );
 }
