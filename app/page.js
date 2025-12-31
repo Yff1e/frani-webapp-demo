@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 
 // Welcome to Tailwind CSS
@@ -20,11 +21,22 @@ export default function Home() {
               <a href="#deploy" className="text-gray-300 hover:text-indigo-600 transition">Deploy</a>
               <a href="#footer" className="text-gray-300 hover:text-indigo-600 transition">Contact</a>
             </div>
-            <button className="md:hidden">
+            <button className="md:hidden" onClick={() => {
+              const menu = document.getElementById('mobile-menu');
+              menu.classList.toggle('hidden');
+            }}>
               <svg className="h-6a w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
+          </div>
+            <div id="mobile-menu" className="hidden md:hidden pb-4 border-t border-slate-700">
+              <a href="#top" className="block py-2 text-gray-300 hover:text-indigo-600 transition">Back to Top</a>
+              <a href="#introduction" className="block py-2 text-gray-300 hover:text-indigo-600 transition">Introduction</a>
+              <a href="#tutorial" className="block py-2 text-gray-300 hover:text-indigo-600 transition">Tutorial</a>
+              <a href="#FAQ's" className="block py-2 text-gray-300 hover:text-indigo-600 transition">FAQ's</a>
+              <a href="#deploy" className="block py-2 text-gray-300 hover:text-indigo-600 transition">Deploy</a>
+              <a href="#footer" className="block py-2 text-gray-300 hover:text-indigo-600 transition">Contact</a>
           </div>
         </div>
       </nav>
@@ -61,12 +73,12 @@ export default function Home() {
       <div className="max-w-7xl mx-auto  px-4 py-16 sm:px-6 lg:px-8">
         {/* Introduction Section */}
         <section  id="introduction" className="mb-5 pt-10">
-          <h2 className="text-4xl font-bold text-slate-100 mt-10 mb-6">What is Tailwind CSS?</h2>
-          <div className="bg-white rounded-lg shadow-md p-7 m-5  ml-20 mr-60">
-            <p className="text-2xl text-gray-700 mb-5 ">
+          <h2 className="text-4xl sm:text-4xl font-bold text-slate-100 mt-10 mb-6">What is Tailwind CSS?</h2>
+          <div className="bg-white rounded-lg shadow-md p-7 m-5  ml-20 mr-60 sm:p-7">
+            <p className="text-2xl sm:text-2xl text-gray-700 mb-5 ">
               Tailwind CSS is a utility-first CSS framework designed to help developers build modern and responsive user interfaces directly in their HTML or JSX files. Instead of writing custom CSS rules, developers apply pre-defined utility classes to elements, allowing faster development and more consistent designs.
             </p>
-            <p className="text-xl font-bold text-gray-700">
+            <p className="text-xl sm:text-xl font-bold text-gray-700">
               Note: Tailwind’s official documentation presents multiple installation methods, the core concept of using utility classes remains the same across all setups.
             </p>
           </div>
@@ -74,9 +86,9 @@ export default function Home() {
 
         {/* Prerequisite Section */}
           <section id="prerequisite" className="mb-16">
-          <h2 className="text-4xl text-right font-bold text-slate-100 mb-6">Prerequisites:</h2>
-          <div className="text-2xl text-gray-700 mb-5 bg-white rounded-lg shadow-md p-7 m-5 mr-20 ml-60">
-            <p className="text-2xl text-gray-700 mb-5">
+          <h2 className="text-4xl sm:text-4xl text-right font-bold text-slate-100 mb-6">Prerequisites:</h2>
+          <div className="text-2xl sm:text-2xl text-gray-700 mb-5 bg-white rounded-lg shadow-md p-7 m-5 mr-20 ml-60">
+            <p className="text-2xl sm:text-2xl text-gray-700 mb-5">
               You need the following tools installed on your machine to set up Tailwind CSS:
             </p>
               <ul className="list-disc list-inside mt-4">
@@ -373,7 +385,7 @@ export default function Home() {
             flex flex-col justify-center px-5 mb-20 cursor-pointer
           ">
             <h4 className="text-3xl text-center mb-5">1</h4>
-            <p className="text-xl">Naming convention for the project</p>
+            <p className="text-xl text-center">Naming convention for the project</p>
           </div>
 
           {/* Expand Panel */}
