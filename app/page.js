@@ -70,16 +70,16 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto  px-4 py-16 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
         {/* Introduction Section */}
-        <section  id="introduction" className="mb-5 pt-10">
-          <h2 className="text-4xl sm:text-4xl font-bold text-slate-100 mt-10 mb-6">What is Tailwind CSS?</h2>
-          <div className="bg-white rounded-lg shadow-md p-7 m-5  ml-20 mr-60 sm:p-7">
-            <p className="text-2xl sm:text-2xl text-gray-700 mb-5 ">
+        <section id="introduction" className="mb-12 pt-10">
+          <h2 className="text-3xl sm:text-4xl font-bold text-slate-100 mt-10 mb-6">What is Tailwind CSS?</h2>
+          <div className="bg-white rounded-lg shadow-md p-6 ml-10 mr-10 sm:mr-40 sm:p-10">
+            <p className="text-lg sm:text-2xl text-gray-700 mb-5">
               Tailwind CSS is a utility-first CSS framework designed to help developers build modern and responsive user interfaces directly in their HTML or JSX files. Instead of writing custom CSS rules, developers apply pre-defined utility classes to elements, allowing faster development and more consistent designs.
             </p>
-            <p className="text-xl sm:text-xl font-bold text-gray-700">
-              Note: Tailwind’s official documentation presents multiple installation methods, the core concept of using utility classes remains the same across all setups.
+            <p className="text-base sm:text-xl font-bold text-gray-700">
+              Note: Tailwind's official documentation presents multiple installation methods, the core concept of using utility classes remains the same across all setups.
             </p>
           </div>
         </section>
@@ -87,7 +87,7 @@ export default function Home() {
         {/* Prerequisite Section */}
           <section id="prerequisite" className="mb-16">
           <h2 className="text-4xl sm:text-4xl text-right font-bold text-slate-100 mb-6">Prerequisites:</h2>
-          <div className="text-2xl sm:text-2xl text-gray-700 mb-5 bg-white rounded-lg shadow-md p-7 m-5 mr-20 ml-60">
+          <div className="text-2xl sm:text-2xl text-gray-700 mb-5 bg-white rounded-lg shadow-md p-7 m-5 mr-10 sm:mr-20 ml-10 sm:ml-40">
             <p className="text-2xl sm:text-2xl text-gray-700 mb-5">
               You need the following tools installed on your machine to set up Tailwind CSS:
             </p>
@@ -109,10 +109,10 @@ export default function Home() {
         {/* Tutorial Section */}
         <section id="tutorial" className="mt-30 mb-30 pt-15">
           <section id="setup" className="mb-30">
-        <h2 className="text-5xl font-bold text-slate-100 mt-10 mb-10">Setting up Tailwind CSS</h2>
+        <h2 className="text-3xl sm:text-5xl font-bold text-slate-100 mt-10 mb-10">Setting up Tailwind CSS</h2>
           <div className="h-[calc(100vh-200px)] overflow-y-scroll scroll-smooth snap-y snap-mandatory bg-slate-700 rounded-lg shadow-xl">
             <div className="h-full snap-start flex flex-col justify-center bg-slate-800 px-20 mt-30">
-              <p className="text-3xl text-slate-200 leading-relaxed mt-5 ml-30 mr-30 mb-5 ">In your code editor. Open a new terminal found on the menu bar. Inside the terminal, it will show the current location of your project</p>
+              <p className="text-2xl sm:text-3xl text-slate-200 leading-relaxed mt-0 ml-1 mr-5 sm:ml-5 sm:mr-5 sm:mt-5 mb-10 ">In your code editor. Open a new terminal found on the menu bar. Inside the terminal, it will show the current location of your project</p>
               <img 
                 src="/images/1.png" 
                 alt="Terminal Screenshot 1" 
@@ -120,9 +120,9 @@ export default function Home() {
               />
             </div>
             <div className="h-full snap-start bg-slate-900">
-              <p className="text-3xl text-slate-200 leading-relaxed ml-30 mr-30 pt-25">You can type the following prompts to check if all the necessary tools are installed and see their current version
+              <p className="text-2xl sm:text-3xl text-slate-200 leading-relaxed ml-20 mr-20 pt-20">You can type the following prompts to check if all the necessary tools are installed and see their current version
               </p>
-                <ul className="list-disc list-inside mt-2 text-3xl text-gray-900 ml-30 mr-30 pb-5">
+                <ul className="list-disc list-inside mt-2 text-2xl sm:text-2xl text-slate-200 ml-20 mr-20 pb-5">
                   <li className="mb-2">node -v</li>
                   <li className="mb-2">npm -v</li>
                   <li className="mb-2">git -v</li>
@@ -134,8 +134,8 @@ export default function Home() {
             />
             </div>
             <div className="bg-slate-800 h-full snap-start">
-              <p className="text-3xl text-slate-200 leading-relaxed ml-30 mr-30 pt-30 pb-10">Type <b>npx create-next-app@latest .</b> prompt to start installing Tailwind CSS using Next.js features</p>
-              <p className="text-3xl text-slate-200 leading-relaxed ml-30 mr-30 pb-15">And for this walkthrough, we'll be using customized settings so we have more control on what we are using</p>
+              <p className="text-2xl sm:text-3xl text-slate-200 leading-relaxed ml-20 mr-20 pt-20 pb-5 sm:ml-30 sm:mr-30 sm:pt-30 sm:pb-10">Type <b>npx create-next-app@latest .</b> prompt to start installing Tailwind CSS using Next.js features</p>
+              <p className="text-2xl sm:text-3xl text-slate-200 leading-relaxed ml-20 mr-20 pb-10 sm:ml-30 sm:mr-30 sm:pt-5 sm:pb-15">And for this walkthrough, we'll be using customized settings so we have more control on what we are using</p>
               <img 
                 src="/images/3.png" 
                 alt="Terminal Screenshot 3" 
@@ -144,8 +144,8 @@ export default function Home() {
             </div>
 
             <div className="h-full snap-start bg-slate-900">
-              <p className="text-3xl text-slate-200 leading-relaxed ml-30 mr-30 pt-35 pb-5">Refer to the image below and confirm the following settings</p>
-              <p className="text-3xl text-slate-200 leading-relaxed ml-30 mr-30 pb-10">You can use the arrow keys to navigate through the options as shown in the terminal</p>
+              <p className="text-2xl sm:text-3xl text-slate-200 leading-relaxed ml-20 mr-20 pt-20 pb-5 sm:ml-30 sm:mr-30 sm:pt-30 sm:pb-5">Refer to the image below and confirm the following settings</p>
+              <p className="text-2xl sm:text-3xl text-slate-200 leading-relaxed ml-20 mr-20 pt-5 pb-10 sm:ml-30 sm:mr-30 sm:pt-5 ">You can use the arrow keys to navigate through the options as shown in the terminal</p>
               <img 
                 src="/images/4.png" 
                 alt="Terminal Screenshot 4" 
@@ -153,8 +153,8 @@ export default function Home() {
               />
             </div>
             <div className="h-full snap-start bg-slate-800">
-              <p className="text-3xl text-slate-200 leading-relaxed ml-30 mr-30 pt-35 pb-5">You will now see a all of the components being installed</p>
-              <p className="text-3xl text-slate-200 leading-relaxed ml-30 mr-30 pb-10">Wait till you see the message "Success!"</p>
+              <p className="text-2xl sm:text-3xl text-slate-200 leading-relaxed ml-20 mr-20 pt-20 pb-5 sm:ml-30 sm:mr-30 sm:pt-30 sm:pb-5">You will now see a all of the components being installed</p>
+              <p className="text-2xl sm:text-3xl text-slate-200 leading-relaxed ml-20 mr-20 pt-5 pb-10 sm:ml-30 sm:mr-30 sm:pb-10">Wait till you see the message "Success!"</p>
               <img 
                 src="/images/5.png" 
                 alt="Terminal Screenshot 5" 
@@ -162,7 +162,7 @@ export default function Home() {
               />
             </div>
             <div className="h-full snap-start bg-slate-900">
-              <p className="text-3xl text-slate-200 leading-relaxed ml-30 mr-30 pt-35 pb-15">You will also notice in the explorer that all tools are now readily available</p>
+              <p className="text-2xl sm:text-3xl text-slate-200 leading-relaxed ml-20 mr-20 pt-20 pb-10 sm:ml-30 sm:mr-30 sm:pt-30 sm:pb-10">You will also notice in the explorer that all tools are now readily available</p>
               <img 
                 src="/images/6.png" 
                 alt="File Explorer Screenshot 6" 
@@ -170,9 +170,9 @@ export default function Home() {
               />
             </div>
             <div className="h-full snap-start bg-slate-800">
-              <p className="text-3xl text-slate-200 leading-relaxed ml-30 mr-30 pt-35 pb-5">Type <b>npm run dev</b> to start a server and click the localhost link to visit your page</p>
-              <p className="text-3xl text-slate-200 leading-relaxed ml-30 mr-30 pb-5">You can also try to access it with an another device as long as it is connected with the same network</p>
-                <p className="text-3xl text-center text-slate-200 leading-relaxed ml-30 mr-30 pb-10"><b>http://your ip address:3000</b></p>
+              <p className="text-2xl sm:text-3xl text-slate-200 leading-relaxed ml-20 mr-20 pt-10 pb-5 sm:ml-30 sm:mr-30 sm:pt-20 sm:pb-10">Type <b>npm run dev</b> to start a server and click the localhost link to visit your page</p>
+              <p className="text-2xl sm:text-3xl text-slate-200 leading-relaxed ml-20 mr-20 pb-5 sm:ml-30 sm:mr-30 sm:pb-10">You can also try to access it with an another device as long as it is connected with the same network</p>
+              <p className="text-xl sm:text-3xl text-center text-slate-200 leading-relaxed ml-20 mr-20 pb-5 sm:ml-30 sm:mr-30 sm:pb-10"><b>http://your ip address:3000</b></p>
               <img 
                 src="/images/7.png" 
                 alt="Terminal Screenshot 7" 
@@ -180,8 +180,8 @@ export default function Home() {
               />
             </div>
             <div className="h-full snap-start bg-slate-900">
-              <p className="text-3xl text-slate-200 leading-relaxed ml-30 mr-30 pt-25 pb-5"><b>Congratulations! You are now ready to start creating content for your project</b></p>
-              <p className="text-3xl text-slate-200 leading-relaxed ml-30 mr-30  pb-5">This only serves as a placeholder and test if the project is working correctly</p>
+              <p className="text-2xl sm:text-3xl text-slate-200 leading-relaxed ml-20 mr-20 pt-10 pb-5 sm:ml-30 sm:mr-30 sm:pt-15 sm:pb-10"><b>Congratulations! You are now ready to start creating content for your project</b></p>
+              <p className="text-2xl sm:text-3xl text-slate-200 leading-relaxed ml-20 mr-20 pb-10 sm:ml-30 sm:mr-30 sm:pb-10">This only serves as a placeholder and test if the project is working correctly</p>
               <img 
                 src="/images/starting.png" 
                 alt="Page Screenshot" 
@@ -189,7 +189,7 @@ export default function Home() {
               />
             </div>
             <div className="h-full snap-start bg-gradient-to-br from-slate-900 to-violet-950 mb-20">
-              <p className="text-3xl text-slate-200 leading-relaxed ml-30 mr-30 pt-35 pb-15">You can replace the code inside <b>page.js</b> to remove the placeholder and start on making changes</p>
+              <p className="text-2xl sm:text-3xl text-slate-200 leading-relaxed ml-20 mr-20 pt-20 pb-15 sm:ml-40 sm:mr-30 sm:pt-20 sm:pb-15">You can replace the code inside <b>page.js</b> to remove the placeholder and start on making changes</p>
               <img 
                 src="/images/page.png" 
                 alt="page Screenshot" 
@@ -203,7 +203,7 @@ export default function Home() {
         </section>
         
         <section id="basics" className="mt-30 mb-30 pt-15 ">
-        <h2 className="text-5xl font-bold text-slate-100 mb-10">Using Tailwind Utility</h2>
+        <h2 className="text-4xl sm:text-5xl font-bold text-slate-100 mb-10">Using Tailwind Utility</h2>
           <div id="design" className="h-[calc(100vh-200px)] overflow-y-scroll scroll-smooth snap-y snap-mandatory bg-slate-700 rounded-lg shadow-md">
             <div className="h-full snap-start flex flex-col bg-slate-900 justify-center px-20 mt-30">
       <h3 className="text-4xl font-bold mb-6">Utility-First Styling</h3>
@@ -312,10 +312,10 @@ export default function Home() {
         </section>
 
         <section id="github" className="mb-30 pt-15">
-        <h2 className="text-5xl font-bold text-gray-100 mb-10">Saving your Project</h2>
+        <h2 className="text-4xl sm:text-5xl font-bold text-gray-100 mb-10">Saving your Project</h2>
         <div id="saving" className="h-[calc(100vh-200px)] overflow-y-scroll scroll-smooth snap-y snap-mandatory bg-slate-700 rounded-lg shadow-xl">
-            <div className="h-full snap-start bg-slate-900">
-              <p className="text-3xl text-gray-300 mt-15 ml-30 mr-30 pt-20 mb-10">Welcome to <b>GitHub Desktop</b>! To start a project, you can either find an existing file folder or create new with the following details and make sure to ignore Node and no license unless specified</p>
+            <div className="h-full snap-start bg-slate-900 mt-30">
+              <p className="text-2xl sm:text-3xl text-gray-300 ml-15 mr-15 pt-15 pb-5 sm:ml-30 sm:mr-30 sm:pt-20 sm:pb-10">Welcome to <b>GitHub Desktop</b>! To start a project, you can either find an existing file folder or create new with the following details and make sure to ignore Node and no license unless specified</p>
               <img 
                 src="/images/repo1.png" 
                 alt="github Screenshot 1" 
@@ -323,7 +323,7 @@ export default function Home() {
               />
             </div>
             <div className="h-full snap-start bg-slate-800">
-              <p className="text-3xl text-gray-300 ml-30 mr-30 pb-5 pt-20">You can now see the main dashboard of your repository where you can visit the Visual Studio Code directly and do the tutorial <b>Setting up Tailwind CSS</b>
+              <p className="text-2xl sm:text-3xl text-gray-300 ml-15 mr-15 pt-15 pb-10 sm:ml-30 sm:mr-30 sm:pt-20 sm:pb-10">You can now see the main dashboard of your repository where you can visit the Visual Studio Code directly and do the tutorial <b>Setting up Tailwind CSS</b>
               </p>
               <img 
               src="/images/repo2.png" 
@@ -332,16 +332,16 @@ export default function Home() {
             />
             </div>
             <div className="bg-slate-900 h-full snap-start">
-              <p className="text-3xl text-gray-300 ml-30 mr-30 pt-25 pb-10">Featuring <b>GitHub Copilot</b> You can generate commit messages instead of manually typing every push to the repository</p>
+              <p className="text-2xl sm:text-3xl text-gray-300 ml-15 mr-15 pt-15 pb-10 sm:ml-30 sm:mr-30 sm:pt-20 sm:pb-15">Featuring <b>GitHub Copilot</b> You can generate commit messages instead of manually typing every push to the repository</p>
               <img 
                 src="/images/repo3.png" 
                 alt="github Screenshot 3" 
-                className="w-150 mx-auto rounded-lg shadow-md"
+                className="w-110 sm:w-150 mx-auto rounded-lg shadow-md"
               />
             </div>
 
             <div className="h-full snap-start bg-slate-800">
-              <p className="text-3xl text-gray-300 ml-30 mr-30 pt-20 pb-10">Saved changes in your code editor automatically detects it and shows a detailed preview of what new changes you've made</p>
+              <p className="text-2xl sm:text-3xl text-gray-300 ml-15 mr-15 pt-15 pb-10 sm:ml-30 sm:mr-30 sm:pt-20 sm:pb-10">Saved changes in your code editor automatically detects it and shows a detailed preview of what new changes you've made</p>
               <img 
                 src="/images/repo4.png" 
                 alt="github Screenshot 4" 
@@ -349,7 +349,7 @@ export default function Home() {
               />
             </div>
             <div className="h-full snap-start bg-slate-900">
-              <p className="text-3xl text-gray-300 ml-30 mr-30 pt-20 pb-5">It is simple to publish your local repository to github and set the visibility according to your preference (You can change the visibility again in the settings on github)</p>
+              <p className="text-2xl sm:text-3xl text-gray-300 ml-15 mr-15 pt-15 pb-10 sm:ml-30 sm:mr-30 sm:pt-20 sm:pb-10">It is simple to publish your local repository to github and set the visibility according to your preference (You can change the visibility again in the settings on github)</p>
               <img 
                 src="/images/repo5.png" 
                 alt="github Screenshot 5" 
@@ -357,7 +357,7 @@ export default function Home() {
               />
             </div>
             <div className="h-full snap-start bg-gradient-to-br from-slate-900 to-violet-950 mb-20">
-              <p className="text-3xl text-gray-300 ml-30 mr-30 pt-25 pb-10"><b>Congratulations! It is now published to your GitHub Account</b> and you can make further changes inside or out of GitHub </p>
+              <p className="text-2xl sm:text-3xl text-gray-300 ml-15 mr-15 pt-20 pb-10 sm:ml-30 sm:mr-30 sm:pt-25 sm:pb-10"><b>Congratulations! It is now published to your GitHub Account</b> and you can make further changes inside or out of GitHub </p>
               <img 
                 src="/images/repo6.png" 
                 alt="github final Screenshot" 
@@ -374,7 +374,7 @@ export default function Home() {
         <section id="FAQ's" className="mb-16 pt-50 pb-50">
           <h2 className="text-3xl font-bold text-slate-100 mb-20">FAQ's / Error Handling</h2>
         
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-70 ">
 
         {/* Card 1 */}
         <div className="group relative">
@@ -382,7 +382,7 @@ export default function Home() {
           <div className="h-[150px] bg-gradient-to-r from-blue-500 to-blue-500 
             hover:from-blue-600 hover:to-blue-400
             text-white font-bold rounded transition
-            flex flex-col justify-center px-5 mb-20 cursor-pointer
+            flex flex-col justify-center px-5 mb-10 cursor-pointer
           ">
             <h4 className="text-3xl text-center mb-5">1</h4>
             <p className="text-xl text-center">Naming convention for the project</p>
@@ -390,18 +390,19 @@ export default function Home() {
 
           {/* Expand Panel */}
           <div className="
-            absolute left-0 top-full mt-4 w-full
+            absolute left-0 top-full mt-10 w-full 
             bg-white text-slate-800 rounded-lg shadow-lg p-5
-            opacity-0 scale-95 pointer-events-none
+            opacity-100 scale-95 pointer-events-auto
+            md:opacity-0 md:scale-95 md:pointer-events-none
             transition-all duration-300
-            group-hover:opacity-100 group-hover:scale-200 group-hover:pointer-events-auto
+            md:group-hover:opacity-100 md:group-hover:scale-200 mb-10 md:group-hover:pointer-events-auto
           ">
             <img 
               src="/images/name error.png" 
               alt="name error 1"
               className="w-full rounded-lg shadow-md"
             />
-            <p className="text-xs mt-4">Make sure to use lowercase letters for naming conventions as it will cause an error when starting the setup </p>
+            <p className="text-xl sm:text-xs mt-4">Make sure to use lowercase letters for naming conventions as it will cause an error when starting the setup </p>
           </div>
         </div>
 
@@ -410,28 +411,28 @@ export default function Home() {
           <div className="h-[150px] bg-gradient-to-br from-green-500 to-green-500
             hover:from-green-600 hover:to-green-400
             text-white font-bold rounded transition
-            flex flex-col justify-center px-5 cursor-pointer
+            flex flex-col justify-center px-5 mb-15 cursor-pointer
           ">
             <h4 className="text-3xl mb-5 text-center">2</h4>
             <p className="text-xl text-center">Accessing on another device</p>
           </div>
 
           <div className="
-            absolute left-0 top-full mt-4 w-full
+            absolute left-0 top-full  w-full
             bg-white text-slate-800 rounded-lg shadow-lg p-6
-            opacity-0 scale-95 pointer-events-none
-            transition-all duration-300
-            group-hover:opacity-100 group-hover:scale-150 group-hover:pointer-events-auto
+              md:opacity-0 md:scale-95 md:pointer-events-none
+              transition-all duration-300
+              md:group-hover:opacity-100 md:group-hover:scale-150 md:group-hover:pointer-events-auto
           ">
             <img 
               src="/images/link.png" 
               alt="ip address error"
               className="w-full rounded-lg shadow-md"
             />
-            <p className="text-xs mt-4">
+            <p className="text-xs  mt-4">
               Your network address may be changed for security purposes
             </p>
-            <p className="text-xs mt-2">
+            <p className="text-xs  mt-2">
               To access on another device, make sure to check the current IP address by looking at your network settings and see the IPv4 address
              </p>
           </div>
@@ -442,25 +443,26 @@ export default function Home() {
           <div className="h-[150px] bg-gradient-to-br from-purple-400 to-purple-600
             hover:from-purple-500 hover:to-purple-700
             text-white font-bold rounded transition
-            flex flex-col justify-center px-5 cursor-pointer
+            flex flex-col justify-center px-5 mb-10 cursor-pointer
           ">
             <h4 className="text-3xl text-center mb-4">3</h4>
             <p className="text-xl text-center">Error warning</p>
           </div>
 
           <div className="
-            absolute left-0 top-full mt-4 w-full
+            absolute left-0 top-full  w-full
             bg-white text-slate-800 rounded-lg shadow-lg p-6
-            opacity-0 scale-95 pointer-events-none
-            transition-all duration-300
-            group-hover:opacity-100 group-hover:scale-150 group-hover:pointer-events-auto
+              opacity-100 scale-100 pointer-events-auto
+              md:opacity-0 md:scale-95 md:pointer-events-none
+              transition-all duration-300
+              md:group-hover:opacity-100 md:group-hover:scale-150 md:group-hover:pointer-events-auto
           ">
             <img
               src="/images/error warnings.png" 
               alt="error warning"
               className="w-40 rounded-lg shadow-md justify-center mx-auto"
             />
-            <p className="text-xs mt-4">
+            <p className="text-s sm:text-xs mt-4">
               When commiting errors in your code, The logo below will display a warning icon to notify you and show what lines are causing the error
             </p>
           </div>
@@ -471,22 +473,22 @@ export default function Home() {
 
         </section>
 
-        <section id="deploy" className=" m-16 pt-50 pb-50 text-xl text-gray-700">
-          <h2 className="text-5xl text-center text-slate-100 mb-16">Want to deploy your project to <b>Vercel</b>?</h2>
+        <section id="deploy" className=" m-1 sm:m-16 pt-50 pb-50 text-xl text-gray-700">
+          <h2 className="text-4xl sm:text-5xl text-center text-slate-100 mb-16">Want to deploy your project to <b>Vercel</b>?</h2>
           <div className="bg-white rounded-lg shadow-md p-7 m-5">
-            <p className="text-2xl text-gray-700 mb-5  ">
+            <p className="text-xl sm:text-2xl text-gray-700 mb-5  ">
               Deploying your Tailwind CSS project to Vercel is straightforward. Follow these steps to get your project live:
             </p>
-            <ul className="list-disc list-inside mt-4 text-gray-700 text-2xl mb-10">
+            <ul className="list-disc list-inside mt-4 text-gray-700 text-xl sm:text-2xl mb-10">
               <li className="mb-2">Visit <a href="https://vercel.com" className="text-blue-500 hover:underline">https://vercel.com</a> and create your Vercel Account or sign in with your Github Account</li>
               <li className="mb-2">GitHub Account (to link your repository)</li>
               <li className="mb-2">Your Tailwind CSS Project pushed to a GitHub Repository</li>
               <li className="mb-2">And import your Project</li>
             </ul>
-            <p className="text-center text-3xl font-bold">
+            <p className="text-center text-2xl sm:text-3xl font-bold">
               And you're good to go!
             </p>
-            <p className="text-xl text-gray-700 mt-5 mb-5">
+            <p className="text-l sm:text-xl text-gray-700 mt-5 mb-5">
               Note: Connecting your GitHub account to Vercel allows automatic updates whenever you push changes to your repository.
             </p>
           </div>
@@ -499,7 +501,7 @@ export default function Home() {
   <div className="max-w-7xl mx-auto px-6">
 
     {/* Top footer content */}
-    <div className="flex flex-col md:flex-row justify-between gap-10 mb-12">
+    <div className="flex flex-row justify-between gap-10 mb-12">
 
       {/* Left */}
       <div>
